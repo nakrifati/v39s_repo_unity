@@ -295,6 +295,7 @@ public class PlayerInfo : MonoBehaviour
             GameObject clone = (GameObject)Instantiate(suitPrefab.gameObject, transform.position, transform.rotation);
             clone.name = "Suit";
             clone.transform.parent = transform;
+			//clone.transform.position = new Vector3(transform.position.x,transform.position.y-0.2f,transform.position.z); tied to fix dres change hight bug
 
             activeSuit = it;
             it.active = true;
@@ -329,9 +330,9 @@ public class PlayerInfo : MonoBehaviour
             activeSuit.active = false;
             activeSuit = null;
 
-            GameObject clone = (GameObject)Instantiate(Resources.Load("Objects/Hostage"), transform.position, transform.rotation);
+			GameObject clone = (GameObject)Instantiate(Resources.Load("Objects/Hostage"), transform.position, transform.rotation);
             clone.name = "Hostage";
-            clone.transform.Rotate(Vector3.right, -90, Space.Self);
+			clone.transform.localScale = new Vector3(1, 1, 1);
             clone.transform.parent = transform;
 
             if (transform.FindChild(activeWeapon.name))
