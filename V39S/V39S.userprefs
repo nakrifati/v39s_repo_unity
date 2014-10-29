@@ -1,13 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MyAssets\Code\Player\PlayerInfo.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MyAssets\Code\MainMenuGUI.cs">
     <Files>
-      <File FileName="Assets\MyAssets\Code\Item.cs" Line="10" Column="28" />
-      <File FileName="Assets\MyAssets\Code\DeadTimer.cs" Line="1" Column="1" />
-      <File FileName="Assets\MyAssets\Code\Suit.cs" Line="1" Column="1" />
-      <File FileName="Assets\MyAssets\Code\Cheats.cs" Line="1" Column="1" />
-      <File FileName="Assets\MyAssets\Code\Player\PlayerController.cs" Line="264" Column="10" />
-      <File FileName="Assets\MyAssets\Code\Player\PlayerInfo.cs" Line="291" Column="38" />
+      <File FileName="Assets\MyAssets\Code\MainMenuGUI.cs" Line="6" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
