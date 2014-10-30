@@ -1,24 +1,15 @@
 Base path: C:/Program Files (x86)/Unity46beta/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-5-1812
+Pipe name: \\.\pipe\UnityShaderCompiler-5-7044
 Cmd: getPlatforms
 Cmd: compileSnippet
   error: 2 plat 8 at (37): 'tex2Dproj': no matching 2 parameter intrinsic function; Possible intrinsic functions are: tex2Dproj(sampler2D, float4|half4|min10float4|min16float4)
-  api=8 type=0 insize=1623 outsize=0 kw= ok=0
-Cmd: compileSnippet
-  error: 2 plat 8 at (42): 'vert': input parameter 'v' missing semantics
-  error: 1 plat 8 at (50): implicit truncation of vector type
-  error: 1 plat 8 at (51): implicit truncation of vector type
-  error: 1 plat 8 at (52): implicit truncation of vector type
-  api=8 type=0 insize=1097 outsize=0 kw= ok=0
-Cmd: compileSnippet
-  error: 2 plat 8 at (37): 'tex2Dproj': no matching 2 parameter intrinsic function; Possible intrinsic functions are: tex2Dproj(sampler2D, float4|half4|min10float4|min16float4)
   api=8 type=1 insize=1623 outsize=0 kw= ok=0
 Cmd: compileSnippet
   error: 2 plat 8 at (37): 'tex2Dproj': no matching 2 parameter intrinsic function; Possible intrinsic functions are: tex2Dproj(sampler2D, float4|half4|min10float4|min16float4)
   api=8 type=0 insize=1623 outsize=0 kw= ok=0
 Cmd: compileSnippet
-  error: 2 plat 8 at (37): 'tex2Dproj': no matching 2 parameter intrinsic function; Possible intrinsic functions are: tex2Dproj(sampler2D, float4|half4|min10float4|min16float4)
-  api=8 type=1 insize=1623 outsize=0 kw= ok=0
+  error: 2 plat 4 at (37): 'tex2Dproj': no matching 2 parameter intrinsic function; Possible intrinsic functions are: tex2Dproj(sampler2D, float4|half4|min10float4|min16float4)
+  api=4 type=1 insize=1623 outsize=0 kw= ok=0
 Unhandled exception: Readfile from pipe failed. GLE=Канал был закрыт.
 
 

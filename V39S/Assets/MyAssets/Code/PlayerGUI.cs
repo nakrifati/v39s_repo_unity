@@ -30,7 +30,9 @@ public class PlayerGUI : MonoBehaviour
     public bool showmenu = false;
     Vector2 menuPos;
     // GUIContainers
-    public GUIContainer inventoryMenu, pauseMenu;
+    public GUIContainer inventoryMenu;
+	// public GUIContainer inventoryMenu, pauseMenu;
+	public bool triggered = false;
     // GUIBlocks
     public GUIBlock charBlock, activeBlock, activeStack;
     public List<GUIBlock> inventory = new List<GUIBlock>();
@@ -69,7 +71,7 @@ public class PlayerGUI : MonoBehaviour
         }
 
         inventoryMenu = _t.FindChild("InventoryMenu").GetComponent<GUIContainer>();
-        pauseMenu = _t.FindChild("PauseMenu").GetComponent<GUIContainer>();
+		//pauseObj = _t.FindChild("PauseMenu").GetComponent<GUIContainer>();
         charBlock = _t.FindChild("Character").GetComponent<GUIBlock>();
 
         age = _t.FindChild("Age").GetComponent<TextMesh>();
@@ -293,12 +295,12 @@ public class PlayerGUI : MonoBehaviour
                                       _______
     */
 
-    // GUIClick/RClick/MClick - обозначение обработчика, а то, что дальше - имя блока на сцене
+    // GUIClick/RClick/MClick - обозначение обработчика, а то, что дальше - имяPaus блока на сцене
     // Пример: GUIClick - тип обработчика. SaveAndExit - имя объекта на сцене
     public void GUIClickSaveAndExit()
     {
         Time.timeScale = 1.0f;
-        pauseMenu.gameObject.SetActive(false);
+        //pauseMenu.gameObject.SetActive(false);
 
         GameObject.FindGameObjectWithTag("SaveLoad").GetComponent<SaveAndLoad>().Save("Save.save");
         Application.LoadLevel("MainMenu");
@@ -472,20 +474,37 @@ public class PlayerGUI : MonoBehaviour
 
     public void GUIClickPause()
     {
-        pauseMenu.gameObject.SetActive(true);
-        Time.timeScale = 0.0f;
-        activeBlock = null;
-        activeStack = null;
-        clickGuiObj = null;
+		
+		// Use this for initializatio
+			switch (triggered) {
+				
+			case false:
+				Time.timeScale = 0.0f;
+				activeBlock = null;
+				activeStack = null;
+				clickGuiObj = null;
+				triggered=true;
+				break;
+				
+			case true:
+				Time.timeScale = 1.0f;
+				activeBlock = null;
+				activeStack = null;
+				clickGuiObj = null;
+				triggered=false;
+				break;
+		}
+ 
     }
 
     public void GUIClickResume()
     {
-        pauseMenu.gameObject.SetActive(false);
+        //pauseMenu.gameObject.SetActive(false);
         Time.timeScale = 1.0f;
         activeBlock = null;
         activeStack = null;
         clickGuiObj = null;
+		triggered=false;
     }
 
     public void GUIClickSetWeapon()

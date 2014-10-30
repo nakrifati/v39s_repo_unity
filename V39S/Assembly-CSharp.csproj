@@ -123,7 +123,9 @@
      <Compile Include="Assets\MyAssets\Code\MainMenuGUI.cs" />
      <Compile Include="Assets\MyAssets\Code\MyGUI\GUIBlock.cs" />
      <Compile Include="Assets\MyAssets\Code\MyGUI\GUIContainer.cs" />
+     <Compile Include="Assets\MyAssets\Code\MyGUI\GUISystem.cs" />
      <Compile Include="Assets\MyAssets\Code\MyGUI\GUIText.cs" />
+     <Compile Include="Assets\MyAssets\Code\MyGUI\GUI_Show.cs" />
      <Compile Include="Assets\MyAssets\Code\MyGUI\UseLight.cs" />
      <Compile Include="Assets\MyAssets\Code\Plant.cs" />
      <Compile Include="Assets\MyAssets\Code\Player\PlayerController.cs" />
@@ -266,10 +268,10 @@
  <HintPath>C:/Program Files (x86)/Unity46beta/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Ionic.Zip.Reduced">
- <HintPath>C:/Other/v39s_repo_unity/V39S/Assets/AstarPathfindingProject/Plugins/DotNetZip/Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>C:/Other/v39s_backup/xxx/V39S/Assets/AstarPathfindingProject/Plugins/DotNetZip/Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="JsonFx.Json">
- <HintPath>C:/Other/v39s_repo_unity/V39S/Assets/AstarPathfindingProject/Plugins/JsonFx/JsonFx.Json.dll</HintPath>
+ <HintPath>C:/Other/v39s_backup/xxx/V39S/Assets/AstarPathfindingProject/Plugins/JsonFx/JsonFx.Json.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
