@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Cheats : MonoBehaviour
 {
-    public bool consoleVisible, debugVisible, audio = true;
+    public bool consoleVisible, debugVisible, audio;
     public string stringToEdit;
 
     PlayerInfo pi;
@@ -15,6 +15,10 @@ public class Cheats : MonoBehaviour
     {
         pi = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInfo>();
         ve = GameObject.FindGameObjectWithTag("VaultEnvironment").GetComponent<VaultEnvironment>();
+
+		if (audio)
+			GameObject.Find("MainCamera").GetComponent<AudioSource>().volume = 1;
+		else GameObject.Find("MainCamera").GetComponent<AudioSource>().volume = 0;
     }
 
     void Update()
